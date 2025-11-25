@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    /* FONTES */
+    --font-family: "Poppins", sans-serif;
+
+    /* CORES PRINCIPAIS */
+    --background-color: #ece8f8;
+    --brand-color: #003e86;
+    --shape: #ffffffd8;
+
+    
+    /* SOMBRA e HOVER*/
+    --black-shadow-15: #00000015;
+    --botao-hover:#005ac2;
+
+    /*TAMANHOS E ESPAÇOS*/
+    --radius-lg: 20px;
+    --radius-md: 16px;
+    --padding-main: 32px;
+    --header-padding: 32px 16px;
+
+}
+body{
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    padding-bottom: 40px;
+}
+header{
+    background-color: var(--brand-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: var(--header-padding);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    box-shadow: 0 4px 10px var(--black-shadow-15);
+}
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--shape);
+    padding: var(--padding-main);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 18px var(--black-shadow-15);
+}
+#link {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--brand-color);
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 32px;
+    transition: 0.3s;
+}
+#botao {
+    background-color: var(--brand-color);
+    color: var(--background-color);
+    border: none;
+    padding: 15px 22px;
+    border-radius: var(--radius-md);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#botao:hover {
+    background-color: var(--botao-hover);
+    transform: scale(1.03);
+}
+
+#botao:active {
+    transform: scale(0.97);
+}
+#resultado {
+    margin-top: 30px; 
+    font-size: 1.1rem;
+    text-align: center;
+}
+#resultado a {
+    color: var(--brand-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#resultado a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
